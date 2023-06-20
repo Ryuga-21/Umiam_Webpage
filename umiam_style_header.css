@@ -147,7 +147,7 @@ header .navigate ul li ul {
     position: absolute;
     left: 0;
     top: 1.5em;
-    width: 300px;
+    width: 250px;
     background: linear-gradient(to bottom, rgb(255, 85, 19), #ffd060);
     display: none;
 }
@@ -161,8 +161,8 @@ header .navigate ul li ul li {
 }
 
 header .navigate ul li ul li ul {
-    left: 200px;
     top: 0;
+    left: 62%;
 }
 
 header .navigate ul li:focus-within>ul,
