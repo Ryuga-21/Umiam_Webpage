@@ -1,0 +1,260 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: antiquewhite;
+    height: 120x;
+}
+
+nav{
+    display: flex;
+    height: 120px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+}
+nav ul li{
+    list-style: none;
+    margin: 0px 30px;
+    display: flex;
+}
+nav ul li:hover{
+    font-weight: bold;
+}
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    display: flex;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ff4431;
+    text-align: -moz-right;
+    align-items: center;
+    margin: 0px 20px;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: 0.033em;
+    font-weight: 600;
+}
+
+nav ul li span#home_layout{
+    height: 28px;
+    width: 69px;
+    border: 2px solid white;
+    background-color: orangered;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: aliceblue;
+}
+span#home_layout:hover{
+    font-weight: bold;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgb(255, 85, 19), #ffd060);
+    /* overflow: hidden; */
+}
+
+header .logo {
+    position: relative;
+    left: 4%;
+}
+
+header .umiam_logo {
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    /* background: radial-gradient(to center,rgba(255,255,255,0.1),rgba(255,255,0.05)); */
+    background: transparent;
+    left: 5%;
+}
+
+header .umiam_logo:hover {
+    transform: rotate(8turn);
+    background-color: white;
+    transition: 1.5s ease-in-out;
+}
+
+
+header .navigate {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    position: relative;
+    right: 6%;
+}
+
+header .navigate ul {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .navigate ul li {
+    position: relative;
+    float: left;
+}
+
+header .navigate ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+header .navigate ul li a:hover {
+    color: #ffeb3b;
+}
+
+header .navigate ul li ul {
+    position: absolute;
+    left: 0;
+    top: 1.5em;
+    width: 300px;
+    background: linear-gradient(to bottom, rgb(255, 85, 19), #ffd060);
+    display: none;
+}
+
+header .navigate ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 2em;
+    display: flex;
+    align-items: center;
+}
+
+header .navigate ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navigate ul li:focus-within>ul,
+header .navigate ul li:hover>ul {
+    display: initial;
+
+}
+
+#menu-bar
+{
+    display: none;
+
+}
+header label
+{   
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header .search_bar {
+    position: relative;
+    width: 300px;
+    height: 40px;
+
+}
+
+header .search_bar:hover {
+    position: relative;
+    width: 320px;
+    height: 50px;
+    transform: translateX(-5x);
+    background: rgba(255, 255, 0, 0.2);
+    transition: 0.1s;
+}
+
+header .search_bar input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+
+header .search_bar:hover input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 300px;
+    font-size: large;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+
+header .search_bar input::placeholder {
+    color: white;
+}
+
+header .search_bar .search_symb {
+    position: absolute;
+    top: 25%;
+    transform: translateX(-50%);
+    left: 21px;
+    color: black;
+    border-right: 1px solid black;
+    padding-right: 4px;
+}
+
+@media (max-width:991px) {
+    header {
+        padding: 10px 0px;
+        flex-direction: column;
+    }
+
+    header .umiam_logo {
+        margin-bottom: 10px;
+    }
+
+    header .search_bar {
+        width: 50%;
+    }
+}
