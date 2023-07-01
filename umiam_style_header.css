@@ -171,6 +171,13 @@ header .navigate ul li:hover>ul {
 
 }
 
+header .navigate ul li:hover::after header .navigate ul{
+    display: initial;
+}
+
+header .navigate ul li:hover::before header .navigate ul{
+    display: initial;
+}
 #menu-bar
 {
     display: none;
@@ -244,7 +251,7 @@ header .search_bar .search_symb {
     padding-right: 4px;
 }
 
-@media (max-width:991px) {
+@media (max-width:1160px) {
     header {
         padding: 10px 0px;
         flex-direction: column;
@@ -253,8 +260,55 @@ header .search_bar .search_symb {
     header .umiam_logo {
         margin-bottom: 10px;
     }
-
     header .search_bar {
-        width: 50%;
+        display: initial;
+        width: 200px;
+    }
+    header label
+    {
+        position: absolute;
+        display: initial;
+        left: 3%;
+        bottom: 3%;
+        font-size: 24px;
+    }
+    header .navigate
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+    header .navigate ul li
+    {
+        width: 100%;
+        border: 1px solid gray;
+        height: 32px;
+        display: flex;
+        align-items: center;
+
+    }
+    header .navigate ul li ul
+    {
+        position: absolute;
+        width: 100%;
+        z-index: 11;
+    }
+    header .navigate ul li ul li
+    {
+        background: linear-gradient(to bottom, rgb(255, 85, 19), #ffd060);
+    }
+    header .navigate ul li ul li ul
+    {
+        width: 100%;
+        left: 0;
+    } 
+    #menu-bar:checked ~ .navigate
+    {
+        display: initial;
+        background: linear-gradient(to bottom, rgb(255, 85, 19), #ffd060);
     }
 }
