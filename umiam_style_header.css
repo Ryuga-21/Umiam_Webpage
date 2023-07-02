@@ -312,3 +312,11 @@ header .search_bar .search_symb {
         background: linear-gradient(to bottom, rgb(255, 85, 19), #ffd060);
     }
 }
+
+@media (max-width:450px)
+{
+    header label Menu
+    {
+        display: none;
+    }
+}
