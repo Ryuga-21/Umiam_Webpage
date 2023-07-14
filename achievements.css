@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    /* box-sizing: border-box; */
+    background: rgb(138, 237, 240);
+}
+body .achieve
+{
+    display: grid;
+    grid-row-gap: 5%;
+}
+body .achieve .heading_ach
+{
+    color:red;
+    text-shadow: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    
+}
+body .achieve .ments
+{
+    width: 95%;
+    background: black;
+    position: relative;
+    left: 2%;
+    top: 37%;
+    height: 70px;
+    border: 8px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

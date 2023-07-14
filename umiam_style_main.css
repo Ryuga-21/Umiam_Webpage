@@ -260,8 +260,26 @@ swiper-slide img {
     left: 3em;
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.hmc_container .member_card .mem_img_ujj
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -4em;
+    left: 1em;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); 
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .hmc_container .member_card .mem_img img{
+    max-width: 100%;
+    border-radius: 4px; 
+}
+.hmc_container .member_card .mem_img_ujj img{
     max-width: 100%;
     border-radius: 4px; 
 }
@@ -275,8 +293,14 @@ swiper-slide img {
     opacity: 0;
     transition: 0.3s ease-out;
 }
+.member_card .mem_info .mem_info_ul
+{
+    list-style: none;
+}
 .member_card:hover .mem_info
 {
+    display: flex;
+    justify-content: flex-start;
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
