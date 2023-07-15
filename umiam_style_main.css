@@ -236,7 +236,7 @@ swiper-slide img {
 .hmc_container .member_card
 {
     position: relative;
-    max-width: 300px;
+    width: 300px;
     height: fit-content;
     background: white;
     margin: 30px 10px;
